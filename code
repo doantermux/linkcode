@@ -1,75 +1,168 @@
 
-
-
-
 error_reporting(0);
-
-session_start();
- $green="\033[1;32m";
-$wait = $green."WAIT";
-$res="\033[0m";
-$red="\033[1;31m";
-$yellow="\033[0;93m";
-$lightblue="\033[1;35m";
-$bluelight="\033[1;34m";
-$blue="\033[1;36m";
-$purple="\e[35m";
-date_default_timezone_set("Asia/Ho_Chi_Minh");
+ session_start();
+$end="\033[0m";
+$whiteb="\033[1;37m";
+$ress = "\033[0;32m";
+$res = "\033[0;33m";
+$red = "\033[0;31m";
+$green = "\033[0;37m";
+$yellow = "\033[0;33m";
+$white = "\033[0;33m";
+$xnhac = "\033[1;96m";
+$den = "\033[1;90m";
+$do = "\033[1;91m";
+$luc = "\033[1;92m";
+$vang = "\033[1;93m";
+$xduong = "\033[1;94m";
+$hong = "\033[1;95m";
+$trang = "\033[1;97m";
+$nenden = "\033[40m";
+$xanhd = "\033[0;36m";
+$nendo = "\033[41m";
+$nenxanh = "\033[42m";
+$nenvang = "\033[43m";
+$nenblue = "\033[44m";
+$nenPurpe = "\033[45m";
+$nenCyan = "\033[46m";
+$nentrang = "\033[47m";
 $day= date('d-m-y');
 $today = date("d-m-Y");
 $d = date("d-m");
+$day= date('d-m-y');
+$UGreen = "\033[4;32m";
+date_default_timezone_set("Asia/Ho_Chi_Minh");
+$gt = 1.4;
 $ip = file_get_contents('http://kiemtraip.com/raw.php');
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $time=date('h:i');
 $ngay = date("d-m-Y");
  $banner=
 "\r\r
-\033[0;93m╔════════════════════════════════════════════════╗
-\033[0;93m║\033[1;91m❥ \033[0;92mĐịa Chỉ iP Của Bạn Là: \033[1;97m$ip \033[1;93m       ║
-\033[0;93m║\033[1;91m❥ \033[0;92mBản quyền: \033[1;97mDoãn Đình \033[1;93m ║\033[0;91m❥ \033[1;92mĐồng Hồ: \033[1;97m$time \033[0;93m      ║
-\033[0;93m║\033[1;91m❥ \033[0;92mYoutube:\033[1;97mCám Chăm Chỉ \033[1;93m ║\033[1;91m❥ \033[0;92mHôm Nay: \033[1;97m$ngay\033[1;93m  ║
-\033[0;93m║\033[1;91m❥ \033[0;92mZalo: \033[1;97m0971.932.146 \033[1;93m   ║\033[1;91m❥ \033[0;90mChờ Đợi Là Chân Ái !\033[1;93m ║
-\033[0;93m║\033[1;91m❥ \033[0;92mMomo:\033[1;97m0971.932.146 \033[1;93m    ║\033[1;91m❥ \033[0;90mAce Cày Xu Vui Vẻ \033[1;93m   ║
-\033[0;93m║\033[1;91m❥ \033[0;92mFb:\033[1;97mfacebook.com/doandinh2004        \033[1;93m          ║
-\033[0;93m╚════════════════════════════════════════════════╝\n";
+\033[0;97m╔════════════════════════════════════════════════╗
+\033[0;97m║\033[1;97m❥ \033[0;92mĐịa Chỉ iP Của Bạn Là: \033[1;97m$ip \033[1;97m       ║
+\033[0;97m║\033[1;97m❥ \033[0;92mBản quyền: \033[1;97mDoãn Đình \033[1;97m ║\033[0;97m❥ \033[1;92mĐồng Hồ: \033[1;97m$time \033[0;93m      ║
+\033[0;97m║\033[1;97m❥ \033[0;92mYoutube:\033[1;97mCám Chăm Chỉ \033[1;97m ║\033[1;97m❥ \033[0;92mHôm Nay: \033[1;97m$ngay\033[1;97m  ║
+\033[0;97m║\033[1;97m❥ \033[0;92mZalo: \033[1;97m0971.932.146 \033[1;97m   ║\033[1;97m❥ \033[0;90mChờ Đợi Là Chân Ái !\033[1;97m ║
+\033[0;97m║\033[1;97m❥ \033[0;92mMomo:\033[1;97m0971.932.146 \033[1;97m    ║\033[1;97m❥ \033[0;90mAce Cày Xu Vui Vẻ \033[1;97m   ║
+\033[0;97m║\033[1;97m❥ \033[0;92mFb:\033[1;97mfacebook.com/doandinh2004        \033[1;97m          ║
+\033[0;97m╚════════════════════════════════════════════════╝\n"; 
+  
  
-system("clear");
-//sleep(5);
-echo $banner;
+$key1 = file_get_contents('https://pastebin.com/raw/9pSUbAGN');
+//$key1 = file_get_contents('https://pastebin.com/raw/ArdT2D9z');
 
-
-for($v=0;$v<= 10;$v++){ echo "\033[1;97m- ";usleep(15000); echo "\033[1;97m- ";usleep(15000); } echo "\033[1;97m- ";usleep(15000); echo "\033[1;97m-";usleep(15000); echo"\n";
-usleep(500000);
-
-
+//$key1 = file_get_contents('https://pastebin.com/raw/Da0WrC3r');
+//$key1 = file_get_contents('https://pastebin.com/raw/u9CtjrYZ');
+//$key1 = file_get_contents('https://pastebin.com/raw/5iH7jDAT');
+//$key1 = file_get_contents('https://pastebin.com/raw/50VcksZs');//5
+//$key1 = file_get_contents('https://pastebin.com/raw/PH6HAMi8');//3
+//$key1 = file_get_contents('https://pastebin.com/raw/MCbP2GMK');//
+//$key1 = file_get_contents('https://pastebin.com/raw/jHgdWqZJ');//
+//$key1 = file_get_contents('https://pastebin.com/raw/CxHbcZG6');
+$key2 = file_get_contents('https://pastebin.com/raw/M4BJ1cyp');
  
-for($i=0;$i < 100000;$i++){
-$url="https://www.proxyscan.io/api/proxy?last_check=3600&country=fr,us,es,vn,sg&uptime=10&ping=100&limit=1&type=socks4";
-$mr = curl_init();
-curl_setopt_array($mr, array(
-CURLOPT_URL => "$url",
-CURLOPT_RETURNTRANSFER => true,
-CURLOPT_TIMEOUT => 30,
-CURLOPT_HTTPHEADER => array(
-"Host:www.proxyscan.io",
-"sec-ch-ua-mobile:?1",
-"save-data:on",
-"upgrade-insecure-requests:1",
-"user-agent:Mozilla/5.0 (Linux; Android 10; Redmi 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.115 Mobile Safari/537.36",
-"accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
- )));
-$mr2 = curl_exec($mr); curl_close($mr);
-$json = json_decode($mr2,true);
-$ip=explode('",',explode('"Ip": "',$mr2)[1])[0];
-$Port=explode(',',explode('"Port": ',$mr2)[1])[0];
-$country=explode('",',explode('"country": "',$mr2)[1])[0];
-$ping=explode(',',explode('"Ping": ',$mr2)[1])[0];
-$status=explode('"',explode('"status": "',$mr2)[1])[0];
-$socks4="$ip:$Port";
-echo "$green $socks4 => ping~$ping => $country => $status \n";
-$file = fopen("socks4new.txt","a+");
-fwrite($file,$socks4."\n");
-fclose($file);
+@system('clear');
+ print $banner;
 
+
+for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print"\n";
+print $luc."Vượt Link Cũng Là 1 Hình Thức Donate$trang -_-\n";
+for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print"\n";
+print $luc."Link Lấy Key Free:$trang  https://link1s.com/AFJK\n";
+for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print"\n";
+for($j = 4;$j> 0;$j--){
+  print $luc."Chuyển Hướng Đến Trang Lấy Key Sau: $do [$den $j$do ]";
+  sleep(1);
+  print "\r";
+  print "                                          \r";
 }
+system("termux-open-url  https://link1s.com/AFJK");
+print $luc."Nhập Key: $vang";
+$nhapkey = trim(fgets(STDIN));
+if ($nhapkey == $key1){
+	print $luc."Key Đúng\n";
+	print $vang."Hạn Key:24h\n";
+	sleep(1);
+	}
+	elseif ($nhapkey == $key2){
+		print $luc."Key Đúng\n";
+		print $vang."Bạn Đang Vào Tool Với Key Admin\n";
+		sleep(1);
+	
+	
+	}else{
+		print $do."Key Bạn Nhập Sai Rồi\n"; 
+		exit;}
+usleep(500000);
+@system('clear');
+ 
 
+
+print $banner;
+
+
+for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print"\n";
+
+
+
+
+
+
+print $trang."Bae!Bạn Là 1 Người Chạy Tool Free Chân Chính\n";
+for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print "\n";
+ print $luc."Tool Trao Đổi Sub\n";
+ for($v=0;$v<= 5;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print "\n";
+ print $luc."$trang 1_Tool Traodoisub Đa Token\n";
+ for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print "\n";
+ print $luc."Tool Tương Tác Chéo\n";
+ for($v=0;$v<= 5;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print "\n";
+ print $luc."$trang 2_Tool Tuongtaccheo Đa Token\n";
+ for($v=0;$v<= 10;$v++){ print "\033[1;97m- ";usleep(15000); print "\033[1;97m- ";usleep(15000); } print "\033[1;97m- ";usleep(15000); print "\033[1;97m-";usleep(15000); print "\n";
+ print $doandz."".$luc."Nhập Số: $trang";
+$nhaptool2 = trim(fgets(STDIN));
+if ($nhaptool2 == '1'){
+	if(!$sock = @fsockopen('www.google.com', 80))
+{
+    print 'Vui lòng bật kết nối mạng';
+    exit();
+}
+	eval(get('https://run.mocky.io/v3/6fffb5d0-4b05-4210-ad2b-38a1381bf84c'));
+	
+}else if ($nhaptool2 == '2'){
+	eval(get('https://run.mocky.io/v3/e17d98ed-124a-453c-8e61-b66070b0e17f'));
+	
+	
+	
+
+ 
+ 
+
+
+ 
+	eval(system(' Exit'));
+
+
+
+
+
+
+
+}else{exit($do."Nhập Sai\n");}
+function get($url){
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+    $headers = array();
+    $headers[] = 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36';
+    $headers[] = 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9';
+    $headers[] = 'Accept-Language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5';
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    $result = curl_exec($ch);
+    if (curl_errno($ch)) {
+        print 'Vui lòng kiểm tra lại kết nối hoặc có thể do lỗi máy chủ!';
+    }
+    curl_close($ch);
+    return $result;
+}
+ 
